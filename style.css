@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('./image/bg.jpg')no-repeat center center/cover;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bubbles{
+    position: absolute;
+    bottom: -0px;
+    
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    z-index: -1;
+}
+.bubbles img{
+    animation: bubbles-move 10s linear infinite;
+    opacity: 0;
+
+}
+
+.bubbles img:nth-child(1){animation-delay:3.5s;
+width: 20px;}
+.bubbles img:nth-child(2){animation-delay: 6s;
+width:25px ;}
+.bubbles img:nth-child(3){animation-delay: 10s;
+width: 15px;}
+.bubbles img:nth-child(4){animation-delay:1s;
+width: 30px;}
+.bubbles img:nth-child(5){animation-delay:4s;
+width: 20px;}
+.bubbles img:nth-child(6){animation-delay:5s;
+width: 10px;}
+.bubbles img:nth-child(7){animation-delay:8s ;
+width:5px ;}
+.bubbles img:nth-child(8){animation-delay: 11s;
+width: 30px;}
+.bubbles img:nth-child(9){animation-delay:3s ;
+width:10px ;}
+.bubbles img:nth-child(10){animation-delay:1.5 s;
+width: 30px;}
+.bubbles img:nth-child(11){animation-delay: 5.5s;
+width: 20px;}
+.bubbles img:nth-child(12){animation-delay: 9s;
+width:25px ;}
+.bubbles img:nth-child(13){animation-delay: 7.5s;
+width: 15px;}
+.bubbles img:nth-child(14){animation-delay: 3.5s;
+width: 30px;}
+.bubbles img:nth-child(15){animation-delay: 2.5s;
+width: 20px;}
+.bubbles img:nth-child(16){animation-delay: 5s;
+width: 10px;}
+.bubbles img:nth-child(17){animation-delay: 4.5s ;
+width:5px ;}
+.bubbles img:nth-child(18){animation-delay: 6.5s;
+width: 30px;}
+.bubbles img:nth-child(19){animation-delay:2 ;
+width:10px ;}
+.bubbles img:nth-child(20){animation-delay: 7s;
+width: 30px;}
+
+
+@keyframes bubbles-move {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity:.3 ;
+    }
+    25%{
+        opacity:1 ;
+    }
+    50%{
+        opacity:1 ;
+    }
+    75%{
+        opacity: 1;
+    }
+    90%{
+        opacity: .5;
+    }
+    100%{
+        opacity:0 ;
+        transform: translateY(-200vh)
+    }
+}
